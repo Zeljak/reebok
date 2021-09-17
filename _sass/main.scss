@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+/*
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+*/
+
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+@import "./variables";
+
+@import "../node_modules/bulma/bulma";
+
+//GENERAL
+.body {
+	background-color: #fafafa;
+	max-width: 100vw;
+	margin: 0;
+}
+
+.subtitle {
+	font-family: $family-secundary;
+	font-size: $is-size-2;
+	color: $grey1;
+	padding-top: 40px;
+	padding-bottom: 80px;
+
+	@media (max-width: 1024px) {
+		font-size: $is-size-5;
+	}
+
+	@media (max-width: 767px) {
+		font-size: $is-size-5;
+		padding-bottom: 20px;
+		padding-top: 10px;
+	}
+}
+
+.subtitle2 {
+	font-family: $family-secundary;
+	font-size: $is-size-2;
+	color: $grey1;
+	padding-top: 100px;
+	padding-bottom: 80px;
+
+	@media (max-width: 1024px) {
+		font-size: $is-size-5;
+	}
+
+}
+
+.subtitle3 {
+	font-family: $family-secundary;
+	font-size: $is-size-2;
+	color: $grey1;
+	padding-top: 100px;
+	padding-bottom: 80px;
+
+	@media (max-width: 1024px) {
+		font-size: $is-size-5;
+	}
+	@media (max-width: 767px) {
+		padding-top: 20px;
+	}
+
+}
+
+
+//VIDEO
+.videoBlock {
+	max-width: 1485px;
+	align-self: center;
+	width: 100%;
+}
+.videoWrapper {
+	padding-top: 0;
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+.videoWrapper video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+//MAIN TITLE
+.main-title {
+	@media (max-width: 1024px) {
+		padding-left: 0;
+	}
+
+	@media (max-width: 767px) {
+		padding-left: 15px;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1024px) {
+		padding-left: 25px;
+	}
+}
+
+//FIRST BLOCK
+.first-block__text {
+	font-family: $family-primary;
+	font-weight: 500;
+	color: $grey3;
+	padding-top: 15px;
+
+	&_italic {
+		font-style: italic;
+	}
+
+	&_bold {
+		font-weight: 600;
+		padding-top: 30px;
+	}
+
+	@media (max-width: 1024px) {
+		font-size: $is-size-4;
+	}
+
+	@media (max-width: 767px) {
+		font-size: $is-size-5;
+	}
+
+	//iPad
+	@media screen and (min-width: 768px) and (max-width: 1024px) {
+		padding-left: 20px;
+	}
+}
+
+//BLOCK TITLE&PHOTO 
+.title-wrapper {
+	padding-bottom: 60px;
+
+	@media (max-width: 767px) {
+		padding-bottom: 30px;
+	}
+}
+
+//BLOCK LEŽERNO
+.lezerno1 {
+	
+	@media (min-width: 768px) {
+	position: relative;
+	left: 0;	
+	}
+}
+.lezerno2 {
+
+	@media (min-width: 768px) {
+	position: relative;
+	bottom: 150px;	
+		}
+	
+
+}
+
+//BLOCK ENERGY
+.energy1 {
+	
+	@media (min-width: 768px) {
+	position: relative;
+	top: 100px;
+	left: 100px;	
+		}
+}
+.energy2 {
+
+	@media (min-width: 768px) {
+	position: relative;
+	bottom: 300px;	
+			}
+
+}
+
+
+//IMPRESSSUM
+.impressum {
+	font-family: $family-primary;
+	font-size: $is-size-3;
+	color: $grey1;
+
+	@media (max-width: 767px) {
+		font-size: $is-size-5;
+	}
+}
+
+//LEGACY PHOTO
+.last {
+	padding-left: 200px;
+
+	@media (max-width: 767px) {
+		padding-left: 50px;
+	}
+}
+
+
+//FOOTER
+.footer {
+    background-color: $white;
+}
+
+
+h4 {
+	font-family: $family-primary;
+	
+
+	@media (max-width: 1024px) {
+		
+		font-size: 18px;
+	}
+
+	@media (max-width: 768px) {
+		font-size: 12px;
+	}
+}
+
+.container-footer {
+	h4, a { 
+		padding: 20px; 
+	}
+
+	@media (min-width: 768px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+}
