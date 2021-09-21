@@ -68,7 +68,9 @@ section.full {
 
 .subtitle.bold, .subtitle2.bold, .subtitle3.bold {
 	font-weight: 600;
+
 }
+
 
 .subtitle2 {
 	font-family: $family-secundary;
@@ -85,7 +87,7 @@ section.full {
 
 .subtitle3 {
 	font-family: $family-secundary;
-	font-size: $is-size-2;
+	font-size: $is-size-3;
 	color: $grey1;
 	padding-top: 100px;
 	padding-bottom: 80px;
@@ -98,6 +100,16 @@ section.full {
 	}
 
 }
+
+a {
+	color: black;
+	font-weight: bold;
+	
+  }
+
+  a:hover {
+	color: red;
+  }
 
 
 //VIDEO

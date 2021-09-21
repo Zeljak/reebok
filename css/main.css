@@ -11524,7 +11524,7 @@ section.full {
 
 .subtitle3 {
   font-family: "Helvetica", "Arial", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   color: #313231;
   padding-top: 100px;
   padding-bottom: 80px;
@@ -11538,6 +11538,15 @@ section.full {
   .subtitle3 {
     padding-top: 20px;
   }
+}
+
+a {
+  color: black;
+  font-weight: bold;
+}
+
+a:hover {
+  color: red;
 }
 
 .videoBlock {
