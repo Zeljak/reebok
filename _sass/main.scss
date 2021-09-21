@@ -39,9 +39,18 @@ $primary-invert: $pink-invert;
 	margin: 0;
 }
 
+section {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+section.full {
+	max-width: 100vw;
+}
+
 .subtitle {
 	font-family: $family-secundary;
-	font-size: $is-size-2;
+	font-size: $is-size-3;
 	color: $grey1;
 	padding-top: 40px;
 	padding-bottom: 80px;
@@ -55,6 +64,10 @@ $primary-invert: $pink-invert;
 		padding-bottom: 20px;
 		padding-top: 10px;
 	}
+}
+
+.subtitle.bold, .subtitle2.bold, .subtitle3.bold {
+	font-weight: 600;
 }
 
 .subtitle2 {
