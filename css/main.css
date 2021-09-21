@@ -11658,12 +11658,6 @@ section.full {
   }
 }
 
-@media (max-width: 767px) {
-  .last {
-    padding-left: 50px;
-  }
-}
-
 .footer {
   background-color: white;
 }
