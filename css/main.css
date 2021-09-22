@@ -11541,12 +11541,12 @@ section.full {
 }
 
 a {
-  color: black;
+  color: #C71737;
   font-weight: bold;
 }
 
 a:hover {
-  color: red;
+  color: #C71737;
 }
 
 .videoBlock {
